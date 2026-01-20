@@ -7,23 +7,35 @@
 
   <body>
     <!-- the entire body must be written by student -->
-    <form>
-      <label for="fontsize">Font Size:</label>
+	  <h1>Customize Font Preferences</h1>
+  <p>
+    Adjust the font size and font color, then click <strong>Save</strong>.
+    Your preferences will be remembered using cookies.
+  </p>
+
+  <form id="fontForm">
+    <label>
+      Font Size (8–72 px):
       <input
         type="number"
         id="fontsize"
-        name="fontsize"
         min="8"
         max="72"
         value="16"
       />
-      <br />
-      <label for="fontcolor">Font Color:</label>
-      <input type="color" id="fontcolor" name="fontcolor" value="#000000" />
-      <br />
-      <input type="submit" value="Save" />
-    </form>
+    </label>
 
+    <label>
+      Font Color:
+      <input
+        type="color"
+        id="fontcolor"
+        value="#000000"
+      />
+    </label>
+
+    <input type="submit" value="Save" />
+  </form>
     <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
